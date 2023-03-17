@@ -1,7 +1,8 @@
-setSettings( {
-  "height": window.innerHeight,
-  "width": window.innerWidth
-} );
+function start () {
+  setSettings( {
+    "height": window.innerHeight,
+    "width": window.innerWidth
+  } );
 
 let drawningObjects = [ //["color type x y width height"]
   "yellow square 0 0 300 200",
@@ -15,9 +16,10 @@ Render.init( "border: solid 4px yellow; background-color: aqua" );
 
 Render.draw( drawningObjects );
 
+Render.draw( Array( "green circle 100 100 10 10" ) );
 
-
-
+}
+/*
 let Xtime = 0,
   Ytime = 0,
   Xtime2 = true,
@@ -36,40 +38,10 @@ let Xtime = 0,
       ( Ytime2 ) ? Ytime2 = false : Ytime2 = true;
     }
 
-console.log( Xtime, Ytime,window.innerWidth, window.innerHeight )
+    //console.log( Xtime, Ytime,window.innerWidth, window.innerHeight );
 
     Render.draw( Array( `green square ${ Xtime } ${ Ytime } 100 100` ) );
-  },
-  10 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   // ttime , 
-//   // ttime2 = ;
-
-// document.querySelector( "canvas" ).onmouseover = () => {
-//   none();
-// }
-// document.querySelector( "canvas" ).touchstart = () => none();
-
-// document.addEventListener( TouchEvent, none() );
-// document.addEventListener( "mouseover", none() );
-
+  }, 
+10 );
+}
+*/

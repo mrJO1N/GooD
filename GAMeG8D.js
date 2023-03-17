@@ -70,7 +70,16 @@ const Render = { // all graphics functions and methods
       };
 
       // ["color type x y width height"]
-      ctx.fillRect( drawningTime[2], drawningTime[3], drawningTime[4], drawningTime[5] ); // drawning square
+      switch ( drawningTime[ 1 ] ) {
+        case "square":
+          ctx.fillRect( drawningTime[2], drawningTime[3], drawningTime[4], drawningTime[5] ); // drawning square
+          break;
+        case "circle":
+          ctx.beginPath();
+          ctx.arc( drawningTime[ 2 ], drawningTime[ 3 ], 50, 0, Math.PI*2 );
+          ctx.fill();
+          break;
+      }
 
     }
   },
