@@ -16,10 +16,9 @@ Render.init( "border: solid 4px yellow; background-color: aqua" );
 
 Render.draw( drawningObjects );
 
-Render.draw( Array( "green circle 100 100 10 10" ) );
+Render.draw( Array( "green circle 100 100 100" ) );
 
-}
-/*
+
 let Xtime = 0,
   Ytime = 0,
   Xtime2 = true,
@@ -40,8 +39,7 @@ let Xtime = 0,
 
     //console.log( Xtime, Ytime,window.innerWidth, window.innerHeight );
 
-    Render.draw( Array( `green square ${ Xtime } ${ Ytime } 100 100` ) );
+    Render.draw( Array( `green circle ${ Xtime } ${ Ytime } 10` ) );
   }, 
 10 );
 }
-*/

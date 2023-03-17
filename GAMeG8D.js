@@ -76,7 +76,7 @@ const Render = { // all graphics functions and methods
           break;
         case "circle":
           ctx.beginPath();
-          ctx.arc( drawningTime[ 2 ], drawningTime[ 3 ], 50, 0, Math.PI*2 );
+          ctx.arc( drawningTime[ 2 ], drawningTime[ 3 ], drawningTime[ 4 ], 0, Math.PI*2 );
           ctx.fill();
           break;
       }
