@@ -16,8 +16,7 @@ Render.init( "border: solid 4px yellow; background-color: aqua" );
 
 Render.draw( drawningObjects );
 
-}
-/*
+
 Render.draw( Array( "green circle 100 100 100" ) );
 
 
@@ -45,4 +44,3 @@ let Xtime = 0,
   }, 
 10 );
 }
-*/
