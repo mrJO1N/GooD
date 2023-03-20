@@ -38,8 +38,6 @@ let Xtime = 0,
       ( Ytime2 ) ? Ytime2 = false : Ytime2 = true;
     }
 
-    //console.log( Xtime, Ytime,window.innerWidth, window.innerHeight );
-
     Render.draw( Array( `green square ${ Xtime } ${ Ytime } 100 100` ) );
   }, 
 1 );
