@@ -38,9 +38,11 @@ let Xtime = 0,
       ( Ytime2 ) ? Ytime2 = false : Ytime2 = true;
     }
 
-    Render.draw( Array( `green square ${ Xtime } ${ Ytime } 100 100` ) );
+    Render.draw( [
+      `green square ${ Xtime } ${ Ytime } 100 100`,
+      `red circle ${ Ytime } ${ Xtime } 60`
+    ] );
   }, 
 1 );
 }
 
-c("jr")
