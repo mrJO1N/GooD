@@ -40,7 +40,7 @@ let Xtime = 0,
 
     //console.log( Xtime, Ytime,window.innerWidth, window.innerHeight );
 
-    Render.draw( Array( `green square ${ Xtime } ${ Ytime } 10` ) );
+    Render.draw( Array( `green square ${ Xtime } ${ Ytime } 100 100` ) );
   }, 
 1 );
 }
