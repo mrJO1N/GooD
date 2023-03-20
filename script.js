@@ -40,9 +40,9 @@ let Xtime = 0,
 
     //console.log( Xtime, Ytime,window.innerWidth, window.innerHeight );
 
-    Render.draw( Array( `green circle ${ Xtime } ${ Ytime } 10` ) );
+    Render.draw( Array( `green square ${ Xtime } ${ Ytime } 10` ) );
   }, 
-10 );
+1 );
 }
 
 c("jr")
