@@ -43,6 +43,6 @@ let Xtime = 0,
       `red circle ${ Ytime } ${ Xtime } 60`
     ] );
   }, 
-1 );
+10 );
 }
 
