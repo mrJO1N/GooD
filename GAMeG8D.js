@@ -50,6 +50,7 @@ const Render = { // all graphics functions and methods
 
     doc.appendChild( canv ); 
     
+    canv.style = "height: auto; width: auto"
     document.body.style = `margin: 0; padding: 0; overflow: hidden; height: ${ settings.height }; width: ${ settings.width }`;
     
     canv.height = settings.height;
