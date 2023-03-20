@@ -4,20 +4,20 @@ function start () {
     "width": window.innerWidth
   } );
 
-let drawningObjects = [ //["color type x y width height"]
-  "yellow square 0 0 300 200",
-  "black square 0 100 100 100",
-  "black square 200 100 100 100",
-  "black square 100 0 100 100"
-];
+// let drawningObjects = [ //["color type x y width height"]
+//   "yellow square 0 0 300 200",
+//   "black square 0 100 100 100",
+//   "black square 200 100 100 100",
+//   "black square 100 0 100 100"
+// ];
 
 // (width, height, css)
 Render.init( "border: solid 4px yellow; background-color: aqua" );
 
-Render.draw( drawningObjects );
+//Render.draw( drawningObjects );
 
 
-Render.draw( Array( "green circle 100 100 100" ) );
+//Render.draw( Array( "green circle 100 100 100" ) );
 
 
 let Xtime = 0,
