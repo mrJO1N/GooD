@@ -7,7 +7,7 @@ and check "i can make this?"
 */
 
 let colorTime, 
-  drawningTime,
+  object,
   ctx,
   settings = {};
 
@@ -40,6 +40,19 @@ function setSettings(settingsTime) { // func for completion basic settings
   };
 };
 
+class Block{
+  constructor ( type, color, x, y, width, height ) {
+
+    this.type = type
+    this.color = color;
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
+
+    
+  }
+}
 
 const Render = { // all graphics functions and methods
 
@@ -62,22 +75,22 @@ const Render = { // all graphics functions and methods
 
   draw: ( content ) => {
     ctx.clearRect( 0, 0, window.innerWidth, window.innerHeight );
-    for (const i of content) {
-      drawningTime = i.split( " " );
+    for (const object of content) {
+      
 
-      if ( drawningTime[0] != colorTime ) { //if the color is changed in the array (content), then the color being drawn changes
-        colorTime = drawningTime[0];
+      if ( object.color != colorTime ) { //if the color is changed in the array (content), then the color being drawn changes
+        colorTime = object.color;
         ctx.fillStyle = colorTime;
       };
 
       // ["color type x y width height"]
-      switch ( drawningTime[ 1 ] ) {
+      switch ( object.type ) {
         case "square":
-          ctx.fillRect( drawningTime[2], drawningTime[3], drawningTime[4], drawningTime[5] ); // drawning square
+          ctx.fillRect( object.x, object.y, object.width, object.height ); // drawning square
           break;
         case "circle":
           ctx.beginPath();
-          ctx.arc( drawningTime[ 2 ], drawningTime[ 3 ], drawningTime[ 4 ], 0, Math.PI*2 );
+          ctx.arc( object.x, object.y, object.radius, 0, Math.PI*2 );
           ctx.fill();
           break;
       }

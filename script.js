@@ -20,6 +20,8 @@ Render.init( "border: solid 4px yellow; background-color: aqua" );
 //Render.draw( Array( "green circle 100 100 100" ) );
 
 
+/*
+
 let Xtime = 0,
   Ytime = 0,
   Xtime2 = true,
@@ -44,5 +46,12 @@ let Xtime = 0,
     ] );
   }, 
 10 );
-}
 
+*/
+
+  let square = new Block( "square", "red", 0, 0, 100, 100 );
+  Render.draw( [
+    square
+  ] );
+
+}
