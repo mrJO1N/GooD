@@ -37,16 +37,24 @@ let Xtime = 0,
 */
 
   let square = new Block( "square", "red", 0, 0, 100, 100 ),
-      square2 = new Block( "square", "green", 0, 120, 100, 100 );
+      circle = new Block( "circle", "green", 0, 120, 100 );
 
-      square2.x += 100;
-  Render.draw( [
+  square.width = 400;
+
+  circle.x += 100;
+  circle.radius = 60;
+
+  let circle2 = new Block( "circle", "green", 0, 120, 60 );
+  circle2.x += 300;
+
+   Render.draw( [
     square,
-    square2
+    circle2,
+    circle
   ] );
 
 
 
 
-  
+
 }

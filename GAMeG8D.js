@@ -47,9 +47,13 @@ class Block{
     this.color = color;
     this.x = x;
     this.y = y;
-    this.width = width;
-    this.height = height;
 
+    if ( type == "circle" ) {
+      this.radius = width
+    } else {
+      this.width = width;
+      this.height = height;
+    }
     
   }
 }
