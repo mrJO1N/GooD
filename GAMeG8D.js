@@ -87,7 +87,6 @@ const Render = { // all graphics functions and methods
         ctx.fillStyle = colorTime;
       };
 
-      // ["color type x y width height"]
       switch ( object.type ) {
         case "square":
           ctx.fillRect( object.x, object.y, object.width, object.height ); // drawning square
