@@ -9,7 +9,7 @@ Render.init( "border: solid 4px yellow; background-color: aqua" );
 
 
 
-let square = new Block( "square", "blue", 0, 0, 100, 100 ),
+let square = new Square( "blue", 0, 0, 100, 100 ),
   Xtime2 = true,
   Ytime2 = true,
   forever = setInterval( () => {
