@@ -1,5 +1,6 @@
 function start () {
   setSettings( {
+    "path": "#game",
     "height": window.innerHeight,
     "width": window.innerWidth
   } );
@@ -42,5 +43,5 @@ function start () {
 
 
 
-  
+
 }
