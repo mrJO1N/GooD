@@ -40,20 +40,15 @@ function setSettings(settingsTime) { // func for completion basic settings
   };
 };
 
-class Block{
-  constructor ( type, color, x, y, width, height ) {
+class Square{
+  constructor ( color, x, y, width, height ) {
 
     this.type = type
     this.color = color;
     this.x = x;
     this.y = y;
-
-    if ( type == "circle" ) {
-      this.radius = width
-    } else {
-      this.width = width;
-      this.height = height;
-    }
+    this.width = width;
+    this.height = height;
     
   }
 }
@@ -87,11 +82,11 @@ const Render = { // all graphics functions and methods
         ctx.fillStyle = colorTime;
       };
 
-      switch ( object.type ) {
-        case "square":
+      switch ( object.constructor.name ) {
+        case "Square":
           ctx.fillRect( object.x, object.y, object.width, object.height ); // drawning square
           break;
-        case "circle":
+        case "Circle":
           ctx.beginPath();
           ctx.arc( object.x, object.y, object.radius, 0, Math.PI*2 );
           ctx.fill();
