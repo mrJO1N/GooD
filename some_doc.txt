@@ -1,0 +1,41 @@
+setSettings( { width:0, height:0, path:"#game" } );
+-можно ничего не передовать в качастве аргументов, тогда все настройки будут базовыми
+-можно передать не все настройки
+настройки:
+- "width". базовая = 300
+- "height". базовая = 150
+- "path" ( место, в котором будет отвисовываться игра ). базовая = "body"
+например:
+  setSettings( { 
+    width: 0,
+    height: 0,
+    path: "#game" 
+  } );
+
+
+Render.init()
+инициализирует отвисовку
+в аргументе css-стили, их можно не указывать
+например:
+  Render.init( "border: solid 4px yellow; background-color: aqua" );
+
+
+Render.draw()
+отрисовывает массив экземпляров объектов
+например:
+  Render.draw( [
+    square,
+    circle
+  ] );
+
+
+
+
+КЛАССЫ:
+
+new Circle( color, x, y, radius )
+
+new Square( color, x, y, width, height )
+
+
+
