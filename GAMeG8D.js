@@ -20,10 +20,10 @@ function setSettings(settingsTime) { // func for completion basic settings
     "path": "body",
     "height": 150,
     "width": 300
-  },
-  basicKeys = Object.keys( basic ), // better make this now, than make this in cycle "for"
-  basicValues = Object.values( basic ),
-  reportTime = [];
+    },
+    basicKeys = Object.keys( basic ), // better make this now, than make this in cycle "for"
+    basicValues = Object.values( basic ),
+    reportTime = [];
   
   if ( typeof settingsTime != "undefined" ) {
     for ( let i=0; i<basicKeys.length; i++ ) {   
@@ -40,6 +40,9 @@ function setSettings(settingsTime) { // func for completion basic settings
   };
 };
 
+
+
+
 class Square{
   constructor ( color, x, y, width, height ) {
 
@@ -49,9 +52,8 @@ class Square{
     this.width = width;
     this.height = height;
     
-  }
-}
-
+  };
+};
 class Circle{
   constructor ( color, x, y, radius ) {
 
@@ -60,8 +62,11 @@ class Circle{
     this.y = y;
     this.radius = radius;
 
-  }
-}
+  };
+};
+
+
+
 
 const Render = { // all graphics functions and methods
 
@@ -101,10 +106,10 @@ const Render = { // all graphics functions and methods
           ctx.arc( object.x, object.y, object.radius, 0, Math.PI*2 );
           ctx.fill();
           break;
-      }
+      };
 
-    }
+    };
   },
 
   clear: () => ctx.clearRect( 0, 0, settings.width, settings.height )
-}
+};
