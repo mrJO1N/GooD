@@ -45,23 +45,26 @@ function setSettings(settingsTime) { // func for completion basic settings
 
 class Square{
   constructor ( color, x, y, width, height ) {
+    if( !new.target ) { new Square( color, x, y, width, height ) } 
+      else {
 
-    this.color = color;
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
-    
+        this.color = color | "black";
+        this.x = x | 0;
+        this.y = y | 0;
+        this.width = width | 0;
+        this.height = height | 0;
+      }
   };
 };
 class Circle{
   constructor ( color, x, y, radius ) {
-
-    this.color = color;
-    this.x = x;
-    this.y = y;
-    this.radius = radius;
-
+    if( !new.target ) { new Circle( color, x, y, radius ) } 
+      else {
+        this.color = color;
+        this.x = x - radius | 0;
+        this.y = y - radius | 0;
+        this.radius = radius | 0;
+      }
   };
 };
 

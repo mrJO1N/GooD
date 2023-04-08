@@ -10,7 +10,7 @@ function start () {
 
 
 
-  let square = new Square( "blue", 0, 0, 100, 100 ),
+  let square = new Circle( "red", 10, 10, 10 ),
     Xtime2 = true,
     Ytime2 = true,
     forever = setInterval( () => {
@@ -23,7 +23,7 @@ function start () {
 
       if ( Ytime2 ) square.y += 10; else square.y -= 10;
 
-      if ( ( square.y < 0 ) || ( square.y > window.innerHeight-100 ) ) {
+      if ( ( square.y < 0 ) | ( square.y > window.innerHeight-100 ) ) {
         ( Ytime2 ) ? Ytime2 = false : Ytime2 = true;
       }
 
@@ -31,7 +31,7 @@ function start () {
         square
       ] );
     }, 
-  10 );
+  1 );
 
 
 
