@@ -10,7 +10,7 @@ function start () {
 
 
 
-  let square = new Circle( "red", 10, 10, 10 ),
+  let square = new Square( "green", undefined, undefined, 100, 100 ),
     Xtime2 = true,
     Ytime2 = true,
     forever = setInterval( () => {
@@ -31,7 +31,7 @@ function start () {
         square
       ] );
     }, 
-  1 );
+  10 );
 
 
 

@@ -18,8 +18,8 @@ function c( text ) {
 function setSettings(settingsTime) { // func for completion basic settings
   let basic = { // basic settings for "settings"
     "path": "body",
-    "height": 150,
-    "width": 300
+    "height": window.innerHeight,
+    "width": window.innerWidth
     },
     basicKeys = Object.keys( basic ), // better make this now, than make this in cycle "for"
     basicValues = Object.values( basic ),
@@ -48,11 +48,11 @@ class Square{
     if( !new.target ) { new Square( color, x, y, width, height ) } 
       else {
 
-        this.color = color | "black";
+        this.color = color;
         this.x = x | 0;
         this.y = y | 0;
-        this.width = width | 0;
-        this.height = height | 0;
+        this.width = width | 10;
+        this.height = height | 10;
       }
   };
 };
@@ -63,7 +63,7 @@ class Circle{
         this.color = color;
         this.x = x - radius | 0;
         this.y = y - radius | 0;
-        this.radius = radius | 0;
+        this.radius = radius | 10;
       }
   };
 };
