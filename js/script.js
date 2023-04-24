@@ -5,6 +5,7 @@ function start () {
     "width": window.innerWidth
   } );
 
+
   // (width, height, css)
   Render.init( "border: solid 4px yellow; background-color: aqua" );
 
