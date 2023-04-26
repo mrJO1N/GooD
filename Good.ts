@@ -71,7 +71,7 @@ function setSettings( settingsTime: settings ) { // func for completion basic se
 };
 
 
-
+   
 
 class Square{
   color: string = "";
