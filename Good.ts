@@ -17,14 +17,11 @@ and check "i can make this?"
 
 /*
 
-*settingsTime: any
-*basic: any
-*basicKeys: any[]
 *settings: any
 *content: any
-*basicValues: any
 
 */
+
 
 
 interface settings {
@@ -47,14 +44,14 @@ let colorTime: string,
 
 
 
-function setSettings( settingsTime: any ) { // func for completion basic settings
+function setSettings( settingsTime: settings ) { // func for completion basic settings
   let basic: settings = { // basic settings for "settings"
     "path": "body",
     "height": window.innerHeight,
     "width": window.innerWidth
     },
     basicKeys: string[] = Object.keys( basic ), // better make this now, than make this in cycle "for"
-    basicValues: any = Object.keys( basic ).map(function(e) {
+    basicValues: (string | number)[] = Object.keys( basic ).map(function(e) {
       return basic[e]
     }),
     reportTime: string[] = [];
@@ -134,7 +131,7 @@ const Render = { // all graphics functions and methods
     
   },
 
-  draw: ( content: any ) => {
+  draw: ( content: any[] ) => {
     ctx.clearRect( 0, 0, window.innerWidth, window.innerHeight );
     for (const object of content) {
       
