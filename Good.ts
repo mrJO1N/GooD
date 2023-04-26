@@ -23,7 +23,6 @@ and check "i can make this?"
 */
 
 
-
 interface settings {
   [key: string]: string | number;
 
